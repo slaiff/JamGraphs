@@ -1,5 +1,5 @@
 /* =========================================
-   GLOBAL FONT SETUP
+    Font Styles
    ========================================= */
 
 /* Copperplate for titles + logo */
@@ -13,7 +13,7 @@ p, a, button {
 }
 
 /* =========================================
-   GLOBAL PAGE STYLES
+    PAGE STYLES
    ========================================= */
 body {
     margin: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 /* =========================================
-   NAVIGATION BAR
+    NAVIGATION BAR
    ========================================= */
 .nav-bar {
     display: flex;
@@ -55,7 +55,7 @@ body {
 }
 
 /* =========================================
-   INTRO SECTION
+    INTRO SECTION
    ========================================= */
 .intro {
     text-align: center;
@@ -76,7 +76,7 @@ body {
 }
 
 /* =========================================
-   BUTTON STYLE (MAGICAL)
+    BUTTON STYLE (JAZZ Vibes)
    ========================================= */
 .btn {
     display: inline-block;
@@ -97,7 +97,7 @@ body {
 }
 
 /* =========================================
-   ABOUT SECTION
+    ABOUT SECTION
    ========================================= */
 .about-section {
     text-align: center;
@@ -126,7 +126,7 @@ body {
 }
 
 /* =========================================
-   FOOTER
+    FOOTER
    ========================================= */
 .footer {
     text-align: center;
