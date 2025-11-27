@@ -13,6 +13,9 @@
     <!--- INTRO-->      
     <main>
         <section class="feed-container">
+            <% posts.forEach(function(post) { %>
+                <%- include("post", post) %>
+            <% }); %>
         </section>
     </main>
     
