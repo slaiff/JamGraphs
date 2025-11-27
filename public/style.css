@@ -3,7 +3,7 @@
    ========================================= */
 
 /* Copperplate for titles + logo */
-h1, h2, h3, .logo {
+h1, h2, h3, .logo-link {
     font-family: "Copperplate", "Copperplate Gothic Light", serif;
 }
 
@@ -34,11 +34,12 @@ body {
     border-bottom: 1px solid rgba(255, 215, 0, 0.4);
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: rgb(255, 215, 0);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+.logo-link {   
+    text-decoration: none !important;  
+    font-size: 28px !important;
+    font-weight: bold !important;
+    color: rgb(255, 215, 0) !important;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8) !important;
 }
 
 .nav-bar a {
