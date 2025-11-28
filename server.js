@@ -97,7 +97,7 @@ app.get('/callback', async function(req, res) {
         account.newUser(req.session.userId, req.session.refresh_token)
     }
 
-    res.redirect('account.html') //since userId exists, should render account
+    res.redirect('index.html') 
   } catch (err) {
     console.error(err)
     res.status(500).send('Error during token exchange or fetching profile');
