@@ -96,7 +96,6 @@ app.get('/callback', async function(req, res) {
     } else {
         account.newUser(req.session.userId, req.session.refresh_token)
     }
-    account.newUser(req.session.userId, req.session.refresh_token)
 
     res.redirect('account.html') //since userId exists, should render account
   } catch (err) {
