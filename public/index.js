@@ -24,4 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = "index.html";
         });
     }
+
+    const params = new URLSearchParams(window.location.search);
+    if(params.get("notLoggedInAlert")) {
+        alert("To access certain features you must login!");
+    }
 })

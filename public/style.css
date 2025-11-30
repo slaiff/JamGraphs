@@ -108,6 +108,7 @@ body {
     font-weight: bold;
     transition: 0.3s;
     box-shadow: 0 0 22px rgba(102,252,241,0.7);
+    cursor: pointer;
 }
 
 .pulse {
@@ -182,3 +183,130 @@ body {
 .dev-list li {
     margin-bottom: 8px;
 }
+
+
+/* VISUALIZATION PAGE */
+.visual-page-container {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-main-container {
+    flex: 1;
+    display: flex;
+    width: 80%;
+    min-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    overflow: auto;
+}
+
+.visual-container {
+    position: relative;
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.graph-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.graph-container * {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.post-pfp {
+    position: absolute;
+    top: 0;
+    right:0;
+    margin: 0.5rem 0.5rem; 
+    width: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px #66FCF1;
+}
+
+.post-name {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin: 0;
+    padding: 0.2rem 0.5rem; 
+    background-color: rgba(99, 160, 186, 0.6);
+    font-size: 1.5rem;
+    color: rgb(0,0,0);
+}
+
+.visual-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-options h2 {
+    color: #66FCF1;
+    text-shadow: 0 0 10px #66FCF1;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.visual-options p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.visual-type {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-size: 2rem;;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.visual-type label {
+    cursor: pointer;
+    padding: .9rem 0 .9rem;
+    margin: 0.4rem 0;
+    border-radius: 8px;
+    background-color: rgba(102, 252, 241, 0.1);
+}
+
+.visual-type input {
+    appearance: none;      
+}
+
+.visual-type input:checked + label {
+    background-color: rgba(102, 252, 241, 0.3);
+    box-shadow: 0 0 6px #66FCF1;
+}
+
+.visual-type label:hover {
+    background-color: rgba(102, 252, 241, 0.2);
+}
+
+#generate-visualization-btn {
+    font-size: 2rem;
+    width: 60%;
+}
+

@@ -43,13 +43,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"logo-area\">\r\n    <img src=\"images/logo.png\" class=\"logo-img\">\r\n    <div class=\"logo\">JamGraphs</div>\r\n</div>\r\n\r\n<nav>\r\n    <a href=\"index.html\">Home</a>\r\n    <a href=\"account.html\">Account</a>\r\n    <a href=\"visualizations.html\">Visualizations</a>\r\n    <a href=\"feed.html\">Feed</a>\r\n    <a href=\"about.html\">About</a>\r\n</nav>"
+  , __lines = "<div class=\"logo-area\">\r\n    <img src=\"images/logo.png\" class=\"logo-img\">\r\n    <div class=\"logo\">JamGraphs</div>\r\n</div>\r\n\r\n<nav>\r\n    <a href=\"index.html\">Home</a>\r\n    <a href=\"account.html\">Account</a>\r\n    <a href=\"/visualizations\">Visualizations</a>\r\n    <a href=\"feed.html\">Feed</a>\r\n    <a href=\"about.html\">About</a>\r\n</nav>"
   , __filename = undefined;
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"logo-area\">\r\n    <img src=\"images/logo.png\" class=\"logo-img\">\r\n    <div class=\"logo\">JamGraphs</div>\r\n</div>\r\n\r\n<nav>\r\n    <a href=\"index.html\">Home</a>\r\n    <a href=\"account.html\">Account</a>\r\n    <a href=\"visualizations.html\">Visualizations</a>\r\n    <a href=\"feed.html\">Feed</a>\r\n    <a href=\"about.html\">About</a>\r\n</nav>")
+    ; __append("<div class=\"logo-area\">\r\n    <img src=\"images/logo.png\" class=\"logo-img\">\r\n    <div class=\"logo\">JamGraphs</div>\r\n</div>\r\n\r\n<nav>\r\n    <a href=\"index.html\">Home</a>\r\n    <a href=\"account.html\">Account</a>\r\n    <a href=\"/visualizations\">Visualizations</a>\r\n    <a href=\"feed.html\">Feed</a>\r\n    <a href=\"about.html\">About</a>\r\n</nav>")
     ; __line = 12
   }
   return __output;

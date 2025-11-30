@@ -10,14 +10,31 @@
     <script src="index.js" defer></script>
 </head>
 
-<body>
+<body class="visual-page-container">
 
 <header class="nav-bar header-container"></header>
 
-<main class="page-container">
-    <h1>Your Visualizations</h1>
-
-    <div id="chartsArea"></div>
+<main class="visual-main-container">
+    <div class="visual-container">
+        <div class="graph-container">
+            <img src="images/posts/test.jpg" >
+        </div>
+        <img src="images/noPfp.jpg" class="post-pfp">
+        <p class="post-name">Placeholder Input</p>
+    </div>
+    <aside class="visual-options">
+        <h2>Visual Options</h2>
+        <p>Select the type of visualization you want to see based on your Spotify data.</p>
+        <div  class="visual-type">
+            <input type="radio" name="visual-choice" id="top-tracks" value="top-tracks" checked>
+            <label for="top-tracks">Top Tracks</label>
+            <input type="radio" name="visual-choice" id="top-artists" value="top-artists">
+            <label for="top-artists">Top Artists</label>
+            <input type="radio" name="visual-choice" id="genres-distribution" value="genres-distribution">
+            <label for="genres-distribution">Genres Distribution</label>
+        </div>
+        <button class="btn" id="generate-visualization-btn">Share</button>
+    </aside>
 </main>
 
 <footer class="footer">

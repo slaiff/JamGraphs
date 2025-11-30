@@ -58,6 +58,14 @@ app.get('/callback', async function(req, res) {
   res.redirect('account.html');
 });
 
+app.get("/visualizations", async function(req, res) {
+  if(req.session && req.session.access_token) {
+    res.redirect("visualizations.html");
+  } else {
+    res.redirect("/?notLoggedInAlert=true");
+  }
+})
+
 app.get("/api/loggedIn", function(req, res) {
     if (req.session && req.session.access_token) {
         res.json(true);
