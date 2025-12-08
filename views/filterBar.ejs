@@ -1,0 +1,33 @@
+<aside class="filter-container">
+
+<h2>Filters</h2>
+
+<%# not yet implemented, for future build TODO %>
+<div class="filter-input-container">
+  <label for="filter-likes" class="filter-input-label">Likes</label>
+  <div class="filter-input-element">
+    <select id="filter-likes" class="filter-input" name="filter-likes">
+      <option selected value="">Any</option>
+      <option>High to Low</option>
+      <option>Low to High</option>
+    </select>
+  </div>
+</div>
+
+<div class="filter-input-container">
+  <label for="filter-date" class="filter-input-label">Date Posted</label>
+  <div class="filter-input-element">
+    <select id="filter-date" class="filter-input" name="filter-date">
+      <option selected value="">Any</option>
+      <option value="1">Today</option>
+      <option value="7">Last 7 Days</option>
+      <option value="10">Last 10 Days</option>
+      <option value="15">Last 15 Days</option>
+      <option value="30">Last 30 Days</option>
+    </select>
+  </div>
+</div>
+
+<button id="filter-update-button" class="action-button">Update</button>
+
+</aside>

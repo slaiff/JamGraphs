@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed - JamGraphs</title>
     <link rel="stylesheet" href="style.css">
+    <script src="filterLogic.js" defer></script> <%# add our script, which is just our logic for filtering on client-side (defer ensures html is parsed/rendered first) %>
 </head>
 
 <body>
@@ -27,21 +28,26 @@
 <main>
     <h1 class="dev-heading" style="text-align: center; font-size: 50px;">Community Feed</h1> 
     
-    <div class="feed-posts-container">
-        <% if (posts.length) { %>
-            <% posts.forEach(function(post) { %>
-                <%- include("post", {
-                    "id": post.id,
-                    "imgUrl": post.imgUrl,
-                    "dateUploaded": post.dateUploaded,
-                    "title": post.title,
-                    "description": post.description,
-                    "numLikes": post.numLikes
-                }) %>
-            <% }) %>
-        <% } else { %>
-            <p>No posts yet!</p>
-        <% } %>
+    <div class="feed-layout">
+        <%# include our filterBar component %>
+        <%- include("filterBar") %>
+        <div class="feed-posts-container">
+            
+            <% if (posts.length) { %>
+                <% posts.forEach(function(post) { %>
+                    <%- include("post", {
+                        "id": post.id,
+                        "imgUrl": post.imgUrl,
+                        "dateUploaded": post.dateUploaded,
+                        "title": post.title,
+                        "description": post.description,
+                        "numLikes": post.numLikes
+                    }) %>
+                <% }) %>
+            <% } else { %>
+                <p>No posts yet!</p>
+            <% } %>
+        </div>
     </div>
 </main>
 

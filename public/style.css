@@ -353,17 +353,6 @@ flex: 1;
     row-gap:15px;
 }
 
-.feed-posts-container {
-    grid-area: posts;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    height:fit-content;
-    column-gap:3%;
-    row-gap:15px;
-    scale:85%; /*temp/fixme, shrink feed posts to fit better*/
-}
-
 .no-posts-message {
     font-size: 1.5rem;
     color: rgba(71, 109, 121, 0.831);
@@ -382,18 +371,7 @@ flex: 1;
     margin-bottom:5px;
 }
 
-/*not hooked up, but we should implement for better sized feed*/
-.feed-post-container {
-    flex: 0 1 30%; 
-    display: flex;  
-    flex-direction: column;
-    align-items: center; 
-    position: relative;
-    overflow: hidden;
-    border-radius: 5%; 
-    margin-top:5px;
-    margin-bottom:5px;
-}
+
 
 .post-image {
     width: 100%;      
@@ -409,7 +387,7 @@ flex: 1;
     margin: 0;
     padding: 0.5rem 0.7rem; 
     background-color: rgba(0, 0, 0, 0.932);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(224 245 255);
 }
 
@@ -536,3 +514,97 @@ canvas#myChart {
     height: 100%;
     max-height: 500px;
 }
+
+/*css for filter bar on 'feed' page*/
+
+.filter-container {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    border-radius: 8px;
+    padding: 24px;
+    margin-right: 8px;
+    max-height: 400px;
+    
+}
+
+.filter-container h2 {
+    color: #66FCF1;
+    text-shadow: 0 0 8px #66FCF1;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.filter-input-container {
+    margin-bottom: 16px;
+}
+
+.filter-input-label {
+    display: block;
+    color: rgb(220, 220, 230);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.filter-input-element {
+    position: relative;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(102, 252, 241, 0.3);
+    border-radius: 4px;
+    color: rgb(220, 220, 230);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-input:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(102, 252, 241, 0.6);
+}
+
+.filter-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #66FCF1;
+    box-shadow: 0 0 8px rgba(102, 252, 241, 0.3);
+}
+
+.filter-input option {
+    background: #1C2541;
+    color: rgb(72, 119, 146);
+}
+
+.action-button {
+    background-color: rgba(0, 0, 0, 0.158);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 150px;
+    height:30px;
+    border-color: rgba(102, 252, 241, 0.3) ;
+}   
+
+/*layout of the feed, make a flexbox so we can nicely organize filterBar and posts-container together*/
+.feed-layout {
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.feed-posts-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
