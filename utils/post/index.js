@@ -28,6 +28,9 @@ module.exports = {
 
         return userPosts;
     },
+    getAllPosts: function() {
+        return readPosts();
+    },
     createPost: function(userId, imgUrl, description) {
         var posts = readPosts();
         

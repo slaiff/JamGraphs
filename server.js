@@ -83,13 +83,22 @@ app.get('/account', function(req, res) {
   });
 })
 
+//Get all posts via exported function from utils/post/index.js
+//Render feed.ejs with posts data
+app.get('/feed', function(req, res) {
+  var posts = post.getAllPosts();
+  res.status(200).render('feed', {
+    posts: posts
+  });
+})
+
 app.get("/api/loggedIn", function(req, res) {
     if (req.session && req.session.access_token) {
         res.status(200).json(true);
     } else {
         res.status(200).json(false);
     }
-});
+})
 //API call for visualizations data
 // Fetches 50 items by default for artists and tracks
 //Fetches 1000 items for genres distribution for better chart
