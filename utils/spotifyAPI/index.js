@@ -36,9 +36,9 @@ module.exports = {
         var state = req.query.state || null;
         var error = req.query.error || null;
         if (state === null || state !== req.session.state) {
-            return res.status(400).send('State mismatch');
+            throw new error('State mismatch');
         } else if(error) {
-            return res.status(400).send('Callback Error: ' + error);
+            throw new error('Callback Error: ' + error);
         } else {
             return fetch('https://accounts.spotify.com/api/token', {
                 method: 'POST',
