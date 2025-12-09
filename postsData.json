@@ -72,19 +72,19 @@
     "numLikes": 0
   },
   {
-    "post-id": 13,
-    "id": "101110100",
-    "imgUrl": "images/posts/post_1765245383946_101110100.png",
-    "dateUploaded": "2025-12-09T01:56:23.959Z",
-    "description": "Flesh123's top artists",
-    "numLikes": 0
-  },
-  {
     "post-id": 15,
     "id": "101110100",
     "imgUrl": "images/posts/post_1765245390518_101110100.png",
     "dateUploaded": "2025-12-09T01:56:30.524Z",
     "description": "Flesh123's genres distribution",
+    "numLikes": 0
+  },
+  {
+    "post-id": 18,
+    "id": "101110100",
+    "imgUrl": "images/posts/post_1765245667554_101110100.png",
+    "dateUploaded": "2025-12-09T02:01:07.562Z",
+    "description": "Flesh123's top artists",
     "numLikes": 0
   }
 ]
