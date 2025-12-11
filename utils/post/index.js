@@ -54,6 +54,19 @@ module.exports = {
   deletePost: function(postId) {
     var posts = readPosts();
 
+    const postToDelete = posts.find(
+      (post) => post["post-id"] === Number(postId)
+    );
+
+    if (postToDelete) {
+      const projectRoot = process.cwd();
+      const imagePath = path.join(projectRoot, "public", postToDelete.imgUrl);
+
+      if (fs.existsSync(imagePath)) {
+        fs.unlinkSync(imagePath);
+      }
+    }
+
     posts = posts.filter(function(post) { 
         return post["post-id"] !== Number(postId);
     });
