@@ -24,8 +24,10 @@ The project focuses on retrieving user-specific Spotify listening data, processi
 # Sample Photos 
 ### Main landing page 
 ![Landing Page](assets/splashPage.png)
-### Graph creation page 
-![Graph Creation Page](assets/graphOptions2.png)
+### Graph creation page (3 Available Graphs)
+![Graph Creation Page1](assets/graphOptions.png)
+![Graph Creation Page2](assets/graphOptions2.png)
+![Graph Creation Page3](assets/graphOptions3.png)
 ### Community Feed 
 ![Community Feed](assets/communityFeed.png)
 ### User Account
